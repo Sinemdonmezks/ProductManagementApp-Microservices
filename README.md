@@ -1,7 +1,7 @@
 # ProductManagementApp-Microservices
 
 DATABASE = product -> ProductDB
-         = productstock -> ProductStockDB
+         || productstock -> ProductStockDB
 
 Product : http://localhost:8090/swagger-ui/index.html
 
