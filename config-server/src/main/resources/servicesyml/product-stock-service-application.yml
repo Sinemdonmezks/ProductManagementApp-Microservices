@@ -1,0 +1,27 @@
+server:
+  port: 8092
+
+spring:
+  datasource:
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/ProductStockDB
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+#Jwt
+
+
+secretkey: ${secretkey}
+audience:  ${audience}
+issuer:    ${issuer}
+
+
+myapplication:
+  feign:
+    product: http://localhost:8090/api/v1

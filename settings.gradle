@@ -1,0 +1,6 @@
+rootProject.name = 'ProductManagementApp-Microservices'
+include 'product-service'
+include 'product-stock-service'
+include 'config-server'
+include 'config-server'
+
